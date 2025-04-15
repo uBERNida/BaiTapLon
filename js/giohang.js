@@ -6,7 +6,7 @@ productGrid.innerHTML = '';
 const getData = async () => {
     try {
         
-        const response = await fetch('data.json');
+        const response = await fetch('../js/data.json');
         const data = await response.json();
 
         if(data && data.length > 0) {
